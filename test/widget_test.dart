@@ -7,13 +7,14 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:mlkit_base/app/mlkit_base.dart';
 
 import 'package:mlkit_base/main.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
+    await tester.pumpWidget(const MLkitBase());
 
     // Verify that our counter starts at 0.
     expect(find.text('0'), findsOneWidget);
